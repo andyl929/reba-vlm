@@ -1,0 +1,57 @@
+# ============================================================
+# REBA-VLM project .gitignore
+# ============================================================
+
+# ---- Data (not committed; regenerated per annotation revision) ----
+data/*
+!data/README.md
+
+# ---- Model weights (59GB, too large for git) ----
+models/
+
+# ---- Logs (regenerated per run) ----
+logs/
+*.log
+
+# ---- Results: JSONL files not committed (GT may be revised) ----
+# README is kept so the directory is documented.
+results/*.jsonl
+
+# ---- Python bytecode / caches ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ---- Virtual envs ----
+venv/
+env/
+.venv/
+ENV/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+*.ipynb
+
+# ---- IDE / editor ----
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# ---- Python build artifacts ----
+build/
+dist/
+*.egg-info/
+*.egg
+
+# ---- Testing ----
+.pytest_cache/
+.coverage
+
+# ---- OS / misc ----
+Thumbs.db
+*.bak
+*.tmp
